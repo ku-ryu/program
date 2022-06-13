@@ -11,5 +11,5 @@ urlpatterns = [
     # すべてのトピックを表示するページ
     path('topics/', views.topics, name='topics'),
     # 個別トピックの詳細ページ
-    path('topics/<int:topic_id', views.topic, name='topic')
+    path('topics/<int:topic_id>', views.topic, name='topic')
 ]
