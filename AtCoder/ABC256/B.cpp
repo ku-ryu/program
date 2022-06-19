@@ -17,7 +17,7 @@ int main(){
         for(int j = 0; j <= i; j++){
             l[j] += a;
             if(l[j] >= 5){
-                for(int k = j; k <= N; k++){
+                for(int k = j; k < N; k++){
                     l[k] = l[k + 1];
                 }
                 ans += 1;
