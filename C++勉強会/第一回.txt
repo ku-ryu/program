@@ -18,3 +18,31 @@ endl; と \n
 
 namespace 概念
     名前の競合を回避するために使用される
+    別の名前空間から呼びたいなら修飾する
+        namespace A
+        {
+            void f(){std::cout << "A" << std::endl;};
+            void hoge(){
+                f(); // 名前空間の中では修飾しなくても呼び出せる
+            }
+        }
+
+        namespace B
+        {
+            void f(){std::cout << "B" << std::endl;};
+            void hoge(){
+                A::f(); // 別の名前空間から呼びたいなら修飾する
+            }
+        }
+
+        int main()
+        {
+            A::f(); // A
+            B::f(); // B
+            A::hoge(); // A
+            B::hoge(); // A
+        }
+    標準ライブラリはstd名前空間に定義されている
+    using namespace std;を使うと、std内に定義されている関数
+    をstd::無しで使えるが、自分で同じ名前の関数を定義すると、
+    名前競合してエラーが起こる
