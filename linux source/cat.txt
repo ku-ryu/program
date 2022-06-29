@@ -40,4 +40,13 @@
              引数又は戻り値がない場合、それらをvoid型にする
              int 関数(void), void 関数(引数)
              
+・記述子(descriptor)
+    ファイルを識別するための目印
 
+・usage関数
+    戻り値...void
+    引数.....int status
+
+    EXIT_SUCCESS...正常終了
+    EXIT_FAILURE...異常終了　定数
+    
