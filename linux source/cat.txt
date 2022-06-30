@@ -49,4 +49,7 @@
 
     EXIT_SUCCESS...正常終了
     EXIT_FAILURE...異常終了　定数
-    
+
+・fputs(const char *s, FILE *fp)
+    第一引数...書き込む文字列
+    第二引数...ファイルポインタ
