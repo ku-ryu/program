@@ -99,3 +99,9 @@ mov：代入 add：足す sub：引く
 push (ASCIIコード)
     Hiをpushする時、H(0x48),i(0x69)なので push 0x6948とする
     リトルエンディアンなので、順番を入れ替える必要あり
+
+ジャンプ命令
+    jmp dest ：常にdestにジャンプする
+    jz  dest ：ゼロフラグのビットが1の時destにジャンプする
+    jnz dest ：ゼロフラグのビットが0の時destにジャンプする
+    
