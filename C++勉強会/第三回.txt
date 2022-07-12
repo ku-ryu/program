@@ -15,3 +15,27 @@ cin.ignore()：入力エラーが発生した場合、入力ストリームに�
 do文
 
 string char
+char 一文字を格納するデータ型
+char型配列　文字列として扱える
+
+string C++で追加されたクラス　charより扱いやすい
+
+アロー演算子
+
+構造体
+    いろいろな種類の互いに関連するデータをまとめて、１つの
+    かたまりにしたもの
+    struct 構造体タグ名 構造体変数名
+
+    struct struct_person person_t
+    struct struct_person {
+        char name[20];
+        char sex;
+        int age;
+        double height;
+    };
+
+    typedef 定義されている型 定義する新しい型名;
+    typedef int  * intptr_t;
+    intptr_tはint型を指すポインタ型
+    
