@@ -34,8 +34,27 @@ string C++で追加されたクラス　charより扱いやすい
         int age;
         double height;
     };
+    struct struct_person a[] = {
+        {"太郎","男",21,165,5},
+        {"次郎","男",18,160.1}
+    };
 
     typedef 定義されている型 定義する新しい型名;
     typedef int  * intptr_t;
-    intptr_tはint型を指すポインタ型
+    intptr_tはint型を指すポインタ型j
+    
+bool型
+    bool型はTrueとFalseの２値を管理するデータ型
+    bool型のデータは「0」or「1」であるため1ビットで足りるが
+    メモリの最小単位は1バイトであるため、メモリサイズは1バイト
+
+isPalindrome関数
+    isPalindrome(回文チェックするstring, start位置, end位置)
+
+連結リスト　と　配列
+    連結リストは要素の挿入が無制限　配列はサイズが決まっている
+
+    連結リストはシーケンシャルアクセス(先頭からの順次アクセス)
+    配列はインデックスを持つためランダムアクセス性に優れる
+
     
