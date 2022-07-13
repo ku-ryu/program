@@ -105,3 +105,8 @@ push (ASCIIコード)
     jz  dest ：ゼロフラグのビットが1の時destにジャンプする
     jnz dest ：ゼロフラグのビットが0の時destにジャンプする
     
+mov DWORD PRT [ebp-0xd], 0x66656562
+    ebpの指すアドレスから16進数で0xdだけ減らした場所に
+    0x66656562をコピーする
+
+sub 引き算
